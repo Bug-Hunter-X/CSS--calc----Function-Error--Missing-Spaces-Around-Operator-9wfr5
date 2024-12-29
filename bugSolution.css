@@ -1,0 +1,9 @@
+The corrected CSS code, fixing the missing spaces around the '+' operator:
+
+```css
+.element {
+  width: calc(100px + 20%);
+}
+```
+
+This version correctly calculates the width as 100px plus 20% of the parent container's width.  Remember this applies to all operators within `calc()`, such as `-`, `*`, and `/`. Always add spaces for reliable calculations.
