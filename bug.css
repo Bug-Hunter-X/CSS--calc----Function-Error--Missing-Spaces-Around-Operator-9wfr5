@@ -1,0 +1,15 @@
+The following CSS code snippet demonstrates a common error when using the `calc()` function to dynamically calculate values.  The error lies in the missing spaces around the '+' operator within the `calc()` function. This is a subtle bug that can lead to unexpected results or even cause the browser to ignore the entire `calc()` expression:
+
+```css
+.element { 
+  width:calc(100px+20%);
+}
+```
+
+This code is attempting to set the width of the `.element` to 100px plus 20% of the containing element's width. However, due to the lack of spaces, the browser interprets it incorrectly.  The correct version requires spaces around the '+' operator:
+
+```css
+.element { 
+  width: calc(100px + 20%);
+}
+```
